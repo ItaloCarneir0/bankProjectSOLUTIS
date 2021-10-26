@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		131123C8086FE88CE46FA592 /* Pods_SolutisLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C35C368EAE7526FBCAA2229 /* Pods_SolutisLogin.framework */; };
+		BA20B4D8270F77BD00E1A061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA20B4D7270F77BD00E1A061 /* AppDelegate.swift */; };
+		BA20B4DA270F77BD00E1A061 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA20B4D9270F77BD00E1A061 /* SceneDelegate.swift */; };
+		BA20B4DC270F77BD00E1A061 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA20B4DB270F77BD00E1A061 /* ViewController.swift */; };
+		BA20B4DF270F77BD00E1A061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA20B4DD270F77BD00E1A061 /* Main.storyboard */; };
+		BA20B4E2270F77BD00E1A061 /* SolutisLogin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA20B4E0270F77BD00E1A061 /* SolutisLogin.xcdatamodeld */; };
+		BA20B4E4270F77C000E1A061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA20B4E3270F77C000E1A061 /* Assets.xcassets */; };
+		BA20B4E7270F77C000E1A061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA20B4E5270F77C000E1A061 /* LaunchScreen.storyboard */; };
+		BA20B4F1270F78EC00E1A061 /* Assets Teste Solutis_logo_solutis.png in Resources */ = {isa = PBXBuildFile; fileRef = BA20B4F0270F78EC00E1A061 /* Assets Teste Solutis_logo_solutis.png */; };
+		BA20B4F3270F89D800E1A061 /* GradientsDesign_Dark Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = BA20B4F2270F89D800E1A061 /* GradientsDesign_Dark Blue.png */; };
+		BAEDF59D27106F1500F1D59D /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEDF59C27106F1500F1D59D /* LoginManager.swift */; };
+		BAEDF59F2710715600F1D59D /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEDF59E2710715600F1D59D /* Login.swift */; };
+		BAEDF5A12710DDCE00F1D59D /* solutis.postman_collection.json in Resources */ = {isa = PBXBuildFile; fileRef = BAEDF5A02710DDCD00F1D59D /* solutis.postman_collection.json */; };
+		BAEDF5A527147D5200F1D59D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAEDF5A427147D5200F1D59D /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6C35C368EAE7526FBCAA2229 /* Pods_SolutisLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SolutisLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA20B4D4270F77BD00E1A061 /* SolutisLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolutisLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA20B4D7270F77BD00E1A061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA20B4D9270F77BD00E1A061 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BA20B4DB270F77BD00E1A061 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA20B4DE270F77BD00E1A061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA20B4E1270F77BD00E1A061 /* SolutisLogin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SolutisLogin.xcdatamodel; sourceTree = "<group>"; };
+		BA20B4E3270F77C000E1A061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA20B4E6270F77C000E1A061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA20B4E8270F77C000E1A061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA20B4F0270F78EC00E1A061 /* Assets Teste Solutis_logo_solutis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Assets Teste Solutis_logo_solutis.png"; sourceTree = "<group>"; };
+		BA20B4F2270F89D800E1A061 /* GradientsDesign_Dark Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GradientsDesign_Dark Blue.png"; sourceTree = "<group>"; };
+		BAEDF59C27106F1500F1D59D /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		BAEDF59E2710715600F1D59D /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		BAEDF5A02710DDCD00F1D59D /* solutis.postman_collection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = solutis.postman_collection.json; path = ../../../Downloads/solutis.postman_collection.json; sourceTree = "<group>"; };
+		BAEDF5A427147D5200F1D59D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BEDCF64845FC9E7BB8DE8DF0 /* Pods-SolutisLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolutisLogin.release.xcconfig"; path = "Target Support Files/Pods-SolutisLogin/Pods-SolutisLogin.release.xcconfig"; sourceTree = "<group>"; };
+		CB272B34D9EA9E2DEBD4588D /* Pods-SolutisLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolutisLogin.debug.xcconfig"; path = "Target Support Files/Pods-SolutisLogin/Pods-SolutisLogin.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA20B4D1270F77BD00E1A061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				131123C8086FE88CE46FA592 /* Pods_SolutisLogin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1774312C082422EBEA3FC4CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB272B34D9EA9E2DEBD4588D /* Pods-SolutisLogin.debug.xcconfig */,
+				BEDCF64845FC9E7BB8DE8DF0 /* Pods-SolutisLogin.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		28A7595B9CE6FA38C3A1BAD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C35C368EAE7526FBCAA2229 /* Pods_SolutisLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA20B4CB270F77BD00E1A061 = {
+			isa = PBXGroup;
+			children = (
+				BAEDF59927106DD200F1D59D /* Controllers */,
+				BAEDF59827106DC400F1D59D /* Views */,
+				BAEDF59727106DBC00F1D59D /* Models */,
+				BAEDF59627106DB300F1D59D /* Files */,
+				BA20B4D6270F77BD00E1A061 /* SolutisLogin */,
+				BA20B4D5270F77BD00E1A061 /* Products */,
+				1774312C082422EBEA3FC4CA /* Pods */,
+				28A7595B9CE6FA38C3A1BAD6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BA20B4D5270F77BD00E1A061 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B4D4270F77BD00E1A061 /* SolutisLogin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA20B4D6270F77BD00E1A061 /* SolutisLogin */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B4E3270F77C000E1A061 /* Assets.xcassets */,
+				BA20B4E8270F77C000E1A061 /* Info.plist */,
+				BA20B4E0270F77BD00E1A061 /* SolutisLogin.xcdatamodeld */,
+			);
+			path = SolutisLogin;
+			sourceTree = "<group>";
+		};
+		BAEDF59627106DB300F1D59D /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAEDF5A427147D5200F1D59D /* GoogleService-Info.plist */,
+				BAEDF5A02710DDCD00F1D59D /* solutis.postman_collection.json */,
+				BA20B4F2270F89D800E1A061 /* GradientsDesign_Dark Blue.png */,
+				BA20B4F0270F78EC00E1A061 /* Assets Teste Solutis_logo_solutis.png */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		BAEDF59727106DBC00F1D59D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B4D7270F77BD00E1A061 /* AppDelegate.swift */,
+				BA20B4D9270F77BD00E1A061 /* SceneDelegate.swift */,
+				BAEDF59C27106F1500F1D59D /* LoginManager.swift */,
+				BAEDF59E2710715600F1D59D /* Login.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BAEDF59827106DC400F1D59D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B4E5270F77C000E1A061 /* LaunchScreen.storyboard */,
+				BA20B4DD270F77BD00E1A061 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BAEDF59927106DD200F1D59D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA20B4DB270F77BD00E1A061 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA20B4D3270F77BD00E1A061 /* SolutisLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA20B4EB270F77C000E1A061 /* Build configuration list for PBXNativeTarget "SolutisLogin" */;
+			buildPhases = (
+				3C8547712609FB7960B6EA2C /* [CP] Check Pods Manifest.lock */,
+				BA20B4D0270F77BD00E1A061 /* Sources */,
+				BA20B4D1270F77BD00E1A061 /* Frameworks */,
+				BA20B4D2270F77BD00E1A061 /* Resources */,
+				5D1BA3374A4E1384BD8C9F4B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SolutisLogin;
+			productName = SolutisLogin;
+			productReference = BA20B4D4270F77BD00E1A061 /* SolutisLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA20B4CC270F77BD00E1A061 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					BA20B4D3270F77BD00E1A061 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = BA20B4CF270F77BD00E1A061 /* Build configuration list for PBXProject "SolutisLogin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA20B4CB270F77BD00E1A061;
+			productRefGroup = BA20B4D5270F77BD00E1A061 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA20B4D3270F77BD00E1A061 /* SolutisLogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA20B4D2270F77BD00E1A061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA20B4E7270F77C000E1A061 /* LaunchScreen.storyboard in Resources */,
+				BA20B4F1270F78EC00E1A061 /* Assets Teste Solutis_logo_solutis.png in Resources */,
+				BAEDF5A12710DDCE00F1D59D /* solutis.postman_collection.json in Resources */,
+				BA20B4E4270F77C000E1A061 /* Assets.xcassets in Resources */,
+				BA20B4F3270F89D800E1A061 /* GradientsDesign_Dark Blue.png in Resources */,
+				BA20B4DF270F77BD00E1A061 /* Main.storyboard in Resources */,
+				BAEDF5A527147D5200F1D59D /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C8547712609FB7960B6EA2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SolutisLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D1BA3374A4E1384BD8C9F4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SolutisLogin/Pods-SolutisLogin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SolutisLogin/Pods-SolutisLogin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SolutisLogin/Pods-SolutisLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA20B4D0270F77BD00E1A061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA20B4DC270F77BD00E1A061 /* ViewController.swift in Sources */,
+				BA20B4E2270F77BD00E1A061 /* SolutisLogin.xcdatamodeld in Sources */,
+				BAEDF59D27106F1500F1D59D /* LoginManager.swift in Sources */,
+				BAEDF59F2710715600F1D59D /* Login.swift in Sources */,
+				BA20B4D8270F77BD00E1A061 /* AppDelegate.swift in Sources */,
+				BA20B4DA270F77BD00E1A061 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA20B4DD270F77BD00E1A061 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA20B4DE270F77BD00E1A061 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA20B4E5270F77C000E1A061 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA20B4E6270F77C000E1A061 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA20B4E9270F77C000E1A061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA20B4EA270F77C000E1A061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA20B4EC270F77C000E1A061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB272B34D9EA9E2DEBD4588D /* Pods-SolutisLogin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SolutisLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.treinamento.SolutisLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA20B4ED270F77C000E1A061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEDCF64845FC9E7BB8DE8DF0 /* Pods-SolutisLogin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SolutisLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.treinamento.SolutisLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA20B4CF270F77BD00E1A061 /* Build configuration list for PBXProject "SolutisLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA20B4E9270F77C000E1A061 /* Debug */,
+				BA20B4EA270F77C000E1A061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA20B4EB270F77C000E1A061 /* Build configuration list for PBXNativeTarget "SolutisLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA20B4EC270F77C000E1A061 /* Debug */,
+				BA20B4ED270F77C000E1A061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BA20B4E0270F77BD00E1A061 /* SolutisLogin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA20B4E1270F77BD00E1A061 /* SolutisLogin.xcdatamodel */,
+			);
+			currentVersion = BA20B4E1270F77BD00E1A061 /* SolutisLogin.xcdatamodel */;
+			path = SolutisLogin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BA20B4CC270F77BD00E1A061 /* Project object */;
+}
