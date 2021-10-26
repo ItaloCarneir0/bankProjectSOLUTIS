@@ -10,10 +10,12 @@ import Alamofire
 import SwiftyJSON
 import KeychainAccess
 import CPF_CNPJ_Validator
-
+import Navajo_Swift
 
 class ViewController: UIViewController {
     //MARK: - IBOUTLETS
+    @IBOutlet weak var btnLogin: UIButton!
+    
     @IBOutlet weak var tfPassword: UITextField!
     
     @IBOutlet weak var lbResult1: UILabel!
@@ -27,14 +29,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var lbError: UILabel!
     
     @IBOutlet weak var lbSenhaInvalida: UILabel!
+    
+    @IBOutlet weak var swRememberPass: UISwitch!
     //MARK: - VARS
     var user = User()
+    let keychain = Keychain(service: "br.com.treinamento.SolutisLogin")
     //MARK: - DIDLOAD
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tfUser.text = keychain["UserKey"]
     }
-    //MARK: - FUNCTIONS
+    //MARK: - FUNCTION
     @IBAction func tfUserTurnBlack(_ sender: Any) {
         tfUser.textColor=UIColor.black
         tfPassword.textColor=UIColor.black
@@ -51,6 +56,26 @@ class ViewController: UIViewController {
     
     @IBAction func btnLogin(_ sender: Any) {
         doLogin()
+        let passwordVal = tfPassword.text!
+        let passwordRegx = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&<>*~:`-]).{,}$"
+        let rule = PredicateRule(predicate: NSPredicate(format: "SELF BEGINSWITH %@", passwordRegx))
+        let validator = PasswordValidator(rules: [rule])
+        if let failingRules = validator.validate(passwordVal) {
+            print("INVALID")
+            self.tfUser.textColor = UIColor.red
+            self.tfPassword.textColor = UIColor.red
+        } else {
+            print("VALID")
+        }
+
+        if swRememberPass.isOn{
+            let userKey = tfUser.text
+            keychain["UserKey"] = userKey
+        }else{
+            let userKey:String? = nil
+            keychain["UserKey"] = userKey
+        }
+        btnLogin.isEnabled = false
         aiSpinner.startAnimating()
     }
     
@@ -60,7 +85,6 @@ class ViewController: UIViewController {
             teste.user = self.user
         }
     }
-    
     func doLogin() {
         let user = tfUser.text!
         let pass = tfPassword.text!
@@ -130,15 +154,15 @@ class ViewController: UIViewController {
                                 self.performSegue(withIdentifier: "telaExtrato", sender: nil)
                             }
                             self.aiSpinner.stopAnimating()
+                            self.btnLogin.isEnabled = true
                         }
                        // print(response)
                     break
-                    case .failure:
+                    case .failure:     
                     print(Error.self)
                 }
           }
     }
-    
 }
 
     

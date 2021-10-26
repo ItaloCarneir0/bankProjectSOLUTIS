@@ -21,6 +21,7 @@ class extratoCustomCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -29,3 +30,4 @@ class extratoCustomCell: UITableViewCell {
         // Configure the view for the selected state
     }
 }
+

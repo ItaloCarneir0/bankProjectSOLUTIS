@@ -11,5 +11,7 @@ target 'SolutisLogin' do
   pod 'JMMaskTextField-Swift'
   pod 'CPF-CNPJ-Validator'
   pod 'KeychainAccess'
+  pod 'Navajo-Swift'
+  pod 'SwiftDate', '~> 5.0'
 
 end

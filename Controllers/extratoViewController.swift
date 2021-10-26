@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import SwiftDate
 
 class extratoViewController: UIViewController {
     //MARK: - IBOUTLETS
@@ -20,7 +21,6 @@ class extratoViewController: UIViewController {
     @IBOutlet weak var aiSpinner2: UIActivityIndicatorView!
     
     @IBOutlet weak var tbExtrato: UITableView!
-    
     //MARK: - VARS
     var statamentResponse = StatementResponse()
     var extrato: [StatementResponse] = []
@@ -62,41 +62,18 @@ class extratoViewController: UIViewController {
                         extrato2.data = celula["data"] as! String
                         extrato2.descricao = celula["descricao"] as! String
                         extrato2.valor = celula["valor"] as! Double
-
                         self.extrato.append(extrato2)
                 }
-                    print(self.extrato[0].data)
-                    print(self.extrato[0].descricao)
-                    print(self.extrato[0].valor)
-        
-                    print("extrato")
                     DispatchQueue.main.async {
                         self.tbExtrato.reloadData()
                     }
-                    
                 }
                     break
                 case .failure(let error):
                     print(error)
                 }
-            
             }
       }
-    
-    func showExtrato(){
-//       let customCell = customCell()
-       
-//        customCell.lbValor.text = "1.2"
-        tbExtrato.reloadData()
-    }
-}
-
-extension extratoViewController: UITableViewDelegate, UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        print(extrato.count)
-        return extrato.count
-    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tbExtrato.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! extratoCustomCell
         let row = extrato[indexPath.row]
@@ -106,7 +83,6 @@ extension extratoViewController: UITableViewDelegate, UITableViewDataSource{
                 let number = "\(myNumber)"
                 let numberPreFormated = number.replacingOccurrences(of: "-", with: "")
                 let numberFormated = numberPreFormated.replacingOccurrences(of: ".", with: ",")
-    
                 cell.lbExtratoValor.text = "- R$ \(numberFormated)"
                 cell.lbExtratoValor.textColor = UIColor .systemRed
                 cell.lbExtratoStatus.text = "Pagamento"
@@ -114,14 +90,30 @@ extension extratoViewController: UITableViewDelegate, UITableViewDataSource{
                 let number = "\(myNumber)"
                 let numberPreFormated = number.replacingOccurrences(of: "-", with: "")
                 let numberFormated = numberPreFormated.replacingOccurrences(of: ".", with: ",")
-                
                 cell.lbExtratoValor.text = "R$ \(numberFormated)"
                 cell.lbExtratoValor.textColor = UIColor .systemGreen
                 cell.lbExtratoStatus.text = "Recebimento"
             }
+            
+            let passwordToFormate = row.data!
+            let rome = Region(calendar: Calendars.gregorian, zone: Zones.europeRome, locale: Locales.italian)
+            let date = DateInRegion(passwordToFormate, region: rome)
+            let formattedString = date!.toFormat("dd/MM/yyyy", locale: Locales.english)
+
+            cell.lbExtratoData.text = formattedString
             cell.lbExtratoDesc.text = row.descricao
+           
         }
         return cell
-        
+    }
+    
+    func showExtrato(){
+        tbExtrato.reloadData()
+    }
+}
+
+extension extratoViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return extrato.count
     }
 }

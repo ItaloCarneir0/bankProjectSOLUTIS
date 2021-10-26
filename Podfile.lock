@@ -3,6 +3,8 @@ PODS:
   - CPF-CNPJ-Validator (1.0.2)
   - JMMaskTextField-Swift (0.1.3)
   - KeychainAccess (4.2.2)
+  - Navajo-Swift (2.1.0)
+  - SwiftDate (5.1.0)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
@@ -10,6 +12,8 @@ DEPENDENCIES:
   - CPF-CNPJ-Validator
   - JMMaskTextField-Swift
   - KeychainAccess
+  - Navajo-Swift
+  - SwiftDate (~> 5.0)
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
@@ -18,6 +22,8 @@ SPEC REPOS:
     - CPF-CNPJ-Validator
     - JMMaskTextField-Swift
     - KeychainAccess
+    - Navajo-Swift
+    - SwiftDate
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -25,8 +31,10 @@ SPEC CHECKSUMS:
   CPF-CNPJ-Validator: 0b08069595da2c4b20e964b743bfc0a7334d5347
   JMMaskTextField-Swift: 16aa552605b121285e6c2f0817ab31cea5f4704b
   KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  Navajo-Swift: 57b93e73efbfbf452433efbff04402de56beff51
+  SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: e7ca465ccd4e802bd563d8696216ce4b4b08eb1e
+PODFILE CHECKSUM: ea4a5c9b5420cb46f0588065bb58db3f6da4e744
 
 COCOAPODS: 1.11.2
