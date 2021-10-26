@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,9 @@
 		BA20B4E4270F77C000E1A061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA20B4E3270F77C000E1A061 /* Assets.xcassets */; };
 		BA20B4E7270F77C000E1A061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA20B4E5270F77C000E1A061 /* LaunchScreen.storyboard */; };
 		BA20B4F1270F78EC00E1A061 /* Assets Teste Solutis_logo_solutis.png in Resources */ = {isa = PBXBuildFile; fileRef = BA20B4F0270F78EC00E1A061 /* Assets Teste Solutis_logo_solutis.png */; };
-		BA20B4F3270F89D800E1A061 /* GradientsDesign_Dark Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = BA20B4F2270F89D800E1A061 /* GradientsDesign_Dark Blue.png */; };
+		BAE88E0227163AB5005911AA /* solutis_gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAE88E0127163AB5005911AA /* solutis_gradient.jpg */; };
+		BAEBE7ED27171FCB000640FB /* extratoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBE7EC27171FCB000640FB /* extratoViewController.swift */; };
+		BAEBE7F0271760B6000640FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBE7EF271760B6000640FB /* User.swift */; };
 		BAEDF59D27106F1500F1D59D /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEDF59C27106F1500F1D59D /* LoginManager.swift */; };
 		BAEDF59F2710715600F1D59D /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEDF59E2710715600F1D59D /* Login.swift */; };
 		BAEDF5A12710DDCE00F1D59D /* solutis.postman_collection.json in Resources */ = {isa = PBXBuildFile; fileRef = BAEDF5A02710DDCD00F1D59D /* solutis.postman_collection.json */; };
@@ -35,7 +37,9 @@
 		BA20B4E6270F77C000E1A061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA20B4E8270F77C000E1A061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA20B4F0270F78EC00E1A061 /* Assets Teste Solutis_logo_solutis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Assets Teste Solutis_logo_solutis.png"; sourceTree = "<group>"; };
-		BA20B4F2270F89D800E1A061 /* GradientsDesign_Dark Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GradientsDesign_Dark Blue.png"; sourceTree = "<group>"; };
+		BAE88E0127163AB5005911AA /* solutis_gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = solutis_gradient.jpg; sourceTree = "<group>"; };
+		BAEBE7EC27171FCB000640FB /* extratoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extratoViewController.swift; sourceTree = "<group>"; };
+		BAEBE7EF271760B6000640FB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BAEDF59C27106F1500F1D59D /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		BAEDF59E2710715600F1D59D /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		BAEDF5A02710DDCD00F1D59D /* solutis.postman_collection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = solutis.postman_collection.json; path = ../../../Downloads/solutis.postman_collection.json; sourceTree = "<group>"; };
@@ -62,7 +66,6 @@
 				CB272B34D9EA9E2DEBD4588D /* Pods-SolutisLogin.debug.xcconfig */,
 				BEDCF64845FC9E7BB8DE8DF0 /* Pods-SolutisLogin.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -106,12 +109,20 @@
 			path = SolutisLogin;
 			sourceTree = "<group>";
 		};
+		BAEBE7EE2717609C000640FB /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				BAEBE7EF271760B6000640FB /* User.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		BAEDF59627106DB300F1D59D /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				BAE88E0127163AB5005911AA /* solutis_gradient.jpg */,
 				BAEDF5A427147D5200F1D59D /* GoogleService-Info.plist */,
 				BAEDF5A02710DDCD00F1D59D /* solutis.postman_collection.json */,
-				BA20B4F2270F89D800E1A061 /* GradientsDesign_Dark Blue.png */,
 				BA20B4F0270F78EC00E1A061 /* Assets Teste Solutis_logo_solutis.png */,
 			);
 			path = Files;
@@ -120,6 +131,7 @@
 		BAEDF59727106DBC00F1D59D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BAEBE7EE2717609C000640FB /* Response */,
 				BA20B4D7270F77BD00E1A061 /* AppDelegate.swift */,
 				BA20B4D9270F77BD00E1A061 /* SceneDelegate.swift */,
 				BAEDF59C27106F1500F1D59D /* LoginManager.swift */,
@@ -140,6 +152,7 @@
 		BAEDF59927106DD200F1D59D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BAEBE7EC27171FCB000640FB /* extratoViewController.swift */,
 				BA20B4DB270F77BD00E1A061 /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -205,10 +218,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA20B4E7270F77C000E1A061 /* LaunchScreen.storyboard in Resources */,
+				BAE88E0227163AB5005911AA /* solutis_gradient.jpg in Resources */,
 				BA20B4F1270F78EC00E1A061 /* Assets Teste Solutis_logo_solutis.png in Resources */,
 				BAEDF5A12710DDCE00F1D59D /* solutis.postman_collection.json in Resources */,
 				BA20B4E4270F77C000E1A061 /* Assets.xcassets in Resources */,
-				BA20B4F3270F89D800E1A061 /* GradientsDesign_Dark Blue.png in Resources */,
 				BA20B4DF270F77BD00E1A061 /* Main.storyboard in Resources */,
 				BAEDF5A527147D5200F1D59D /* GoogleService-Info.plist in Resources */,
 			);
@@ -266,7 +279,9 @@
 				BA20B4DC270F77BD00E1A061 /* ViewController.swift in Sources */,
 				BA20B4E2270F77BD00E1A061 /* SolutisLogin.xcdatamodeld in Sources */,
 				BAEDF59D27106F1500F1D59D /* LoginManager.swift in Sources */,
+				BAEBE7ED27171FCB000640FB /* extratoViewController.swift in Sources */,
 				BAEDF59F2710715600F1D59D /* Login.swift in Sources */,
+				BAEBE7F0271760B6000640FB /* User.swift in Sources */,
 				BA20B4D8270F77BD00E1A061 /* AppDelegate.swift in Sources */,
 				BA20B4DA270F77BD00E1A061 /* SceneDelegate.swift in Sources */,
 			);
