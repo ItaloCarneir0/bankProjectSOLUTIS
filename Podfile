@@ -7,5 +7,8 @@ target 'SolutisLogin' do
 
   # Pods for SolutisLogin
   pod 'Alamofire', '~> 5.4'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'JMMaskTextField-Swift'
+  pod 'CPF-CNPJ-Validator'
 
 end

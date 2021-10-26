@@ -19,10 +19,10 @@
 		BAE88E0227163AB5005911AA /* solutis_gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAE88E0127163AB5005911AA /* solutis_gradient.jpg */; };
 		BAEBE7ED27171FCB000640FB /* extratoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBE7EC27171FCB000640FB /* extratoViewController.swift */; };
 		BAEBE7F0271760B6000640FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBE7EF271760B6000640FB /* User.swift */; };
-		BAEDF59D27106F1500F1D59D /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEDF59C27106F1500F1D59D /* LoginManager.swift */; };
-		BAEDF59F2710715600F1D59D /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEDF59E2710715600F1D59D /* Login.swift */; };
 		BAEDF5A12710DDCE00F1D59D /* solutis.postman_collection.json in Resources */ = {isa = PBXBuildFile; fileRef = BAEDF5A02710DDCD00F1D59D /* solutis.postman_collection.json */; };
 		BAEDF5A527147D5200F1D59D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAEDF5A427147D5200F1D59D /* GoogleService-Info.plist */; };
+		BAEE1282271E12EC0036E755 /* extratoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE1281271E12EC0036E755 /* extratoCustomCell.swift */; };
+		BAF3DAAF271898260045EFDA /* StatementResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF3DAAE271898260045EFDA /* StatementResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +40,10 @@
 		BAE88E0127163AB5005911AA /* solutis_gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = solutis_gradient.jpg; sourceTree = "<group>"; };
 		BAEBE7EC27171FCB000640FB /* extratoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extratoViewController.swift; sourceTree = "<group>"; };
 		BAEBE7EF271760B6000640FB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		BAEDF59C27106F1500F1D59D /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
-		BAEDF59E2710715600F1D59D /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		BAEDF5A02710DDCD00F1D59D /* solutis.postman_collection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = solutis.postman_collection.json; path = ../../../Downloads/solutis.postman_collection.json; sourceTree = "<group>"; };
 		BAEDF5A427147D5200F1D59D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BAEE1281271E12EC0036E755 /* extratoCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extratoCustomCell.swift; sourceTree = "<group>"; };
+		BAF3DAAE271898260045EFDA /* StatementResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementResponse.swift; sourceTree = "<group>"; };
 		BEDCF64845FC9E7BB8DE8DF0 /* Pods-SolutisLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolutisLogin.release.xcconfig"; path = "Target Support Files/Pods-SolutisLogin/Pods-SolutisLogin.release.xcconfig"; sourceTree = "<group>"; };
 		CB272B34D9EA9E2DEBD4588D /* Pods-SolutisLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolutisLogin.debug.xcconfig"; path = "Target Support Files/Pods-SolutisLogin/Pods-SolutisLogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				BAEBE7EF271760B6000640FB /* User.swift */,
+				BAF3DAAE271898260045EFDA /* StatementResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -134,8 +135,6 @@
 				BAEBE7EE2717609C000640FB /* Response */,
 				BA20B4D7270F77BD00E1A061 /* AppDelegate.swift */,
 				BA20B4D9270F77BD00E1A061 /* SceneDelegate.swift */,
-				BAEDF59C27106F1500F1D59D /* LoginManager.swift */,
-				BAEDF59E2710715600F1D59D /* Login.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -152,6 +151,7 @@
 		BAEDF59927106DD200F1D59D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BAEE1281271E12EC0036E755 /* extratoCustomCell.swift */,
 				BAEBE7EC27171FCB000640FB /* extratoViewController.swift */,
 				BA20B4DB270F77BD00E1A061 /* ViewController.swift */,
 			);
@@ -278,11 +278,11 @@
 			files = (
 				BA20B4DC270F77BD00E1A061 /* ViewController.swift in Sources */,
 				BA20B4E2270F77BD00E1A061 /* SolutisLogin.xcdatamodeld in Sources */,
-				BAEDF59D27106F1500F1D59D /* LoginManager.swift in Sources */,
 				BAEBE7ED27171FCB000640FB /* extratoViewController.swift in Sources */,
-				BAEDF59F2710715600F1D59D /* Login.swift in Sources */,
+				BAF3DAAF271898260045EFDA /* StatementResponse.swift in Sources */,
 				BAEBE7F0271760B6000640FB /* User.swift in Sources */,
 				BA20B4D8270F77BD00E1A061 /* AppDelegate.swift in Sources */,
+				BAEE1282271E12EC0036E755 /* extratoCustomCell.swift in Sources */,
 				BA20B4DA270F77BD00E1A061 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

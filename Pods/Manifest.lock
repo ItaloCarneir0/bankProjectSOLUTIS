@@ -1,16 +1,28 @@
 PODS:
   - Alamofire (5.4.3)
+  - CPF-CNPJ-Validator (1.0.2)
+  - JMMaskTextField-Swift (0.1.3)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.4)
+  - CPF-CNPJ-Validator
+  - JMMaskTextField-Swift
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - CPF-CNPJ-Validator
+    - JMMaskTextField-Swift
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  CPF-CNPJ-Validator: 0b08069595da2c4b20e964b743bfc0a7334d5347
+  JMMaskTextField-Swift: 16aa552605b121285e6c2f0817ab31cea5f4704b
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 497c7345844f434a4b722419e948b800e61d297e
+PODFILE CHECKSUM: 54bc5763f99af69bd548b549b08dd130ed76b6bb
 
 COCOAPODS: 1.11.2
