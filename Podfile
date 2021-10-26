@@ -10,5 +10,6 @@ target 'SolutisLogin' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'JMMaskTextField-Swift'
   pod 'CPF-CNPJ-Validator'
+  pod 'KeychainAccess'
 
 end

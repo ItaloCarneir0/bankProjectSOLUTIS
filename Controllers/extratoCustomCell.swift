@@ -8,11 +8,16 @@
 import UIKit
 
 class extratoCustomCell: UITableViewCell {
-
+    
     @IBOutlet weak var lbExtratoValor: UILabel!
     
     @IBOutlet weak var lbExtratoDesc: UILabel!
 
+    @IBOutlet weak var lbExtratoStatus: UILabel!
+    
+    @IBOutlet weak var lbExtratoData: UILabel!
+    
+//    var extrato: StatementResponse?
     
     override func awakeFromNib() {
         super.awakeFromNib()

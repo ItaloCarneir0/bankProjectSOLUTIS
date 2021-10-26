@@ -8,7 +8,9 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import KeychainAccess
 import CPF_CNPJ_Validator
+
 
 class ViewController: UIViewController {
     //MARK: - IBOUTLETS
@@ -38,7 +40,6 @@ class ViewController: UIViewController {
         tfPassword.textColor=UIColor.black
         self.tfPassword.textColor = UIColor.black
         self.lbError.isHidden=true
-        
     }
     
     @IBAction func tfPasswordTurnBlack(_ sender: Any) {
@@ -58,14 +59,11 @@ class ViewController: UIViewController {
             let teste = segue.destination as! extratoViewController
             teste.user = self.user
         }
-        
     }
     
     func doLogin() {
         let user = tfUser.text!
         let pass = tfPassword.text!
-        let especialChar = NSPredicate(format: "SELF MATCHES %@ ", "^(?=.*[a-z])(?=.*[$@$#!%*?&]).{6,}$")
-        let alphanumericChar = NSPredicate(format: "SELF MATCHES %@ ", "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ")
         let parameters =
             [
                 "username": user,
@@ -87,7 +85,6 @@ class ViewController: UIViewController {
 ////                print("Senha invalida")
 ////            }
 //        validatePassword()
-        
         
         AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: [:]).responseJSON
         {

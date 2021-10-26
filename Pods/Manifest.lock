@@ -2,12 +2,14 @@ PODS:
   - Alamofire (5.4.3)
   - CPF-CNPJ-Validator (1.0.2)
   - JMMaskTextField-Swift (0.1.3)
+  - KeychainAccess (4.2.2)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.4)
   - CPF-CNPJ-Validator
   - JMMaskTextField-Swift
+  - KeychainAccess
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
@@ -15,14 +17,16 @@ SPEC REPOS:
     - Alamofire
     - CPF-CNPJ-Validator
     - JMMaskTextField-Swift
+    - KeychainAccess
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   CPF-CNPJ-Validator: 0b08069595da2c4b20e964b743bfc0a7334d5347
   JMMaskTextField-Swift: 16aa552605b121285e6c2f0817ab31cea5f4704b
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 54bc5763f99af69bd548b549b08dd130ed76b6bb
+PODFILE CHECKSUM: e7ca465ccd4e802bd563d8696216ce4b4b08eb1e
 
 COCOAPODS: 1.11.2

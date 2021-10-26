@@ -8,6 +8,7 @@
 import Foundation
 
 class User{
+    
     var nome:String?
     var cpf:String?
     var saldo:Double?
