@@ -7,7 +7,7 @@
 
 import Foundation
 
-class User{
+struct User{
     
     var nome:String?
     var cpf:String?

@@ -16,7 +16,6 @@
 		BA20B4E4270F77C000E1A061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA20B4E3270F77C000E1A061 /* Assets.xcassets */; };
 		BA20B4E7270F77C000E1A061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA20B4E5270F77C000E1A061 /* LaunchScreen.storyboard */; };
 		BA20B4F1270F78EC00E1A061 /* Assets Teste Solutis_logo_solutis.png in Resources */ = {isa = PBXBuildFile; fileRef = BA20B4F0270F78EC00E1A061 /* Assets Teste Solutis_logo_solutis.png */; };
-		BA677196271F1FDF00A8415F /* loginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA677195271F1FDF00A8415F /* loginAPI.swift */; };
 		BAE88E0227163AB5005911AA /* solutis_gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAE88E0127163AB5005911AA /* solutis_gradient.jpg */; };
 		BAEBE7ED27171FCB000640FB /* extratoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBE7EC27171FCB000640FB /* extratoViewController.swift */; };
 		BAEBE7F0271760B6000640FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBE7EF271760B6000640FB /* User.swift */; };
@@ -24,6 +23,9 @@
 		BAEDF5A527147D5200F1D59D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAEDF5A427147D5200F1D59D /* GoogleService-Info.plist */; };
 		BAEE1282271E12EC0036E755 /* extratoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE1281271E12EC0036E755 /* extratoCustomCell.swift */; };
 		BAF3DAAF271898260045EFDA /* StatementResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF3DAAE271898260045EFDA /* StatementResponse.swift */; };
+		BAF99EEC27207F09007C5F36 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF99EEB27207F09007C5F36 /* APIRequest.swift */; };
+		BAF99EEF27208098007C5F36 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF99EEE27208098007C5F36 /* Validators.swift */; };
+		BAFC5DF027272F3F0058AF4C /* dataFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC5DEF27272F3F0058AF4C /* dataFormater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +40,6 @@
 		BA20B4E6270F77C000E1A061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA20B4E8270F77C000E1A061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA20B4F0270F78EC00E1A061 /* Assets Teste Solutis_logo_solutis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Assets Teste Solutis_logo_solutis.png"; sourceTree = "<group>"; };
-		BA677195271F1FDF00A8415F /* loginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginAPI.swift; sourceTree = "<group>"; };
 		BAE88E0127163AB5005911AA /* solutis_gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = solutis_gradient.jpg; sourceTree = "<group>"; };
 		BAEBE7EC27171FCB000640FB /* extratoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extratoViewController.swift; sourceTree = "<group>"; };
 		BAEBE7EF271760B6000640FB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -46,6 +47,9 @@
 		BAEDF5A427147D5200F1D59D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BAEE1281271E12EC0036E755 /* extratoCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extratoCustomCell.swift; sourceTree = "<group>"; };
 		BAF3DAAE271898260045EFDA /* StatementResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementResponse.swift; sourceTree = "<group>"; };
+		BAF99EEB27207F09007C5F36 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		BAF99EEE27208098007C5F36 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		BAFC5DEF27272F3F0058AF4C /* dataFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataFormater.swift; sourceTree = "<group>"; };
 		BEDCF64845FC9E7BB8DE8DF0 /* Pods-SolutisLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolutisLogin.release.xcconfig"; path = "Target Support Files/Pods-SolutisLogin/Pods-SolutisLogin.release.xcconfig"; sourceTree = "<group>"; };
 		CB272B34D9EA9E2DEBD4588D /* Pods-SolutisLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolutisLogin.debug.xcconfig"; path = "Target Support Files/Pods-SolutisLogin/Pods-SolutisLogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +86,8 @@
 		BA20B4CB270F77BD00E1A061 = {
 			isa = PBXGroup;
 			children = (
+				BAF99EED2720807F007C5F36 /* Utils */,
+				BAF99EEA27207EE9007C5F36 /* Services */,
 				BAEDF59927106DD200F1D59D /* Controllers */,
 				BAEDF59827106DC400F1D59D /* Views */,
 				BAEDF59727106DBC00F1D59D /* Models */,
@@ -116,7 +122,6 @@
 			children = (
 				BAEBE7EF271760B6000640FB /* User.swift */,
 				BAF3DAAE271898260045EFDA /* StatementResponse.swift */,
-				BA677195271F1FDF00A8415F /* loginAPI.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -157,8 +162,25 @@
 				BAEE1281271E12EC0036E755 /* extratoCustomCell.swift */,
 				BAEBE7EC27171FCB000640FB /* extratoViewController.swift */,
 				BA20B4DB270F77BD00E1A061 /* ViewController.swift */,
+				BAFC5DEF27272F3F0058AF4C /* dataFormater.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BAF99EEA27207EE9007C5F36 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BAF99EEB27207F09007C5F36 /* APIRequest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BAF99EED2720807F007C5F36 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BAF99EEE27208098007C5F36 /* Validators.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,11 +304,13 @@
 				BA20B4DC270F77BD00E1A061 /* ViewController.swift in Sources */,
 				BA20B4E2270F77BD00E1A061 /* SolutisLogin.xcdatamodeld in Sources */,
 				BAEBE7ED27171FCB000640FB /* extratoViewController.swift in Sources */,
-				BA677196271F1FDF00A8415F /* loginAPI.swift in Sources */,
+				BAF99EEF27208098007C5F36 /* Validators.swift in Sources */,
+				BAFC5DF027272F3F0058AF4C /* dataFormater.swift in Sources */,
 				BAF3DAAF271898260045EFDA /* StatementResponse.swift in Sources */,
 				BAEBE7F0271760B6000640FB /* User.swift in Sources */,
 				BA20B4D8270F77BD00E1A061 /* AppDelegate.swift in Sources */,
 				BAEE1282271E12EC0036E755 /* extratoCustomCell.swift in Sources */,
+				BAF99EEC27207F09007C5F36 /* APIRequest.swift in Sources */,
 				BA20B4DA270F77BD00E1A061 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

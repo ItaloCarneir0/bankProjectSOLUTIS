@@ -16,17 +16,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Assets Teste Solutis_logo_solutis" translatesAutoresizingMaskIntoConstraints="NO" id="smk-PF-vSE">
-                                <rect key="frame" x="44" y="380" width="327" height="136"/>
+                                <rect key="frame" x="44" y="416" width="327" height="64"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96053844690000001" green="0.96456140280000002" blue="0.97688001390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="smk-PF-vSE" secondAttribute="bottom" constant="346" id="Tk6-Bo-djn"/>
-                            <constraint firstItem="smk-PF-vSE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="336" id="Vai-hd-wuq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="smk-PF-vSE" secondAttribute="bottom" constant="382" id="Tk6-Bo-djn"/>
                             <constraint firstItem="smk-PF-vSE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="aNc-Ux-K0P"/>
                             <constraint firstItem="smk-PF-vSE" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hMS-ey-ZPE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="smk-PF-vSE" secondAttribute="trailing" constant="43" id="nxK-0Y-4Sz"/>
+                            <constraint firstItem="smk-PF-vSE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="372" id="qdG-IY-3Wc"/>
                         </constraints>
                     </view>
                 </viewController>
