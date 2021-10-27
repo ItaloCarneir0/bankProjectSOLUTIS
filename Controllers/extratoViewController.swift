@@ -29,6 +29,7 @@ class extratoViewController: UIViewController, UITableViewDataSource {
     var user2 = User()
     var apiRequest: APIRequest?
     var dataFormating = dataFormater()
+    let utils = Utils()
     
     //MARK: - DIDLOAD
     override func viewDidLoad() {
@@ -39,12 +40,8 @@ class extratoViewController: UIViewController, UITableViewDataSource {
         tbExtrato.delegate = self
         tbExtrato.dataSource = self
         lbExtratoNome.text = user?.nome
-        formatCPF()
-        if let userBalance = user?.saldo{
-            let stringBalance = String(format: "%.2f", userBalance)
-            let formatedBalance = stringBalance.replacingOccurrences(of: ".", with: ",")
-            lbExtratoSaldo.text = "R$ "+(formatedBalance)
-        }
+        lbExtratoCPF.text = utils.formatCPF(cpf: (user?.cpf)!)
+        lbExtratoSaldo.text = "R$ \(utils.formatBalance(value: (user?.saldo)!))"
         getExtrato(token: (user?.token)!)
     }
     
@@ -84,30 +81,6 @@ class extratoViewController: UIViewController, UITableViewDataSource {
     func showExtrato(){
         tbExtrato.reloadData()
     }
-    
-    func formatCPF(){
-        if user?.cpf?.count == 11{
-        let stringCPF = user?.cpf as! String
-        let stringArray = [stringCPF]
-        let characterArray = stringArray.flatMap { $0 }
-        let stringArray2 = characterArray.map { String($0) }
-        
-        let formatedCPF: [String] = [
-            "\(stringArray2[0])", "\(stringArray2[1])", "\(stringArray2[2]).","\(stringArray2[3])", "\(stringArray2[4])","\(stringArray2[5]).","\(stringArray2[6])","\(stringArray2[7])","\(stringArray2[8])-","\(stringArray2[9])","\(stringArray2[10])"
-        ]
-        lbExtratoCPF.text = (formatedCPF.joined(separator: ""))
-    }else if user?.cpf?.count == 14{
-        let stringCPF = user?.cpf as! String
-        let stringArray = [stringCPF]
-        let characterArray = stringArray.flatMap { $0 }
-        let stringArray2 = characterArray.map { String($0) }
-    
-        let formatedCPF: [String] = [
-            "\(stringArray2[0])", "\(stringArray2[1]).", "\(stringArray2[2])","\(stringArray2[3])", "\(stringArray2[4]).","\(stringArray2[5])","\(stringArray2[6])","\(stringArray2[7])/","\(stringArray2[8])","\(stringArray2[9])","\(stringArray2[10])","\(stringArray2[11])-","\(stringArray2[12])","\(stringArray2[13])"
-        ]
-        lbExtratoCPF.text = (formatedCPF.joined(separator: ""))
-            }
-    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: (Any)?) {
         if segue.identifier == "telaLogin" {
@@ -129,24 +102,16 @@ extension extratoViewController: UITableViewDelegate {
         
         if let myNumber = row.valor {
             if myNumber < 0{
-                let roundedValue = NSString(format: "%.2f", myNumber)
-                let number = "\(roundedValue)"
-                let numberPreFormated = number.replacingOccurrences(of: "-", with: "")
-                let numberFormated = numberPreFormated.replacingOccurrences(of: ".", with: ",")
-                cell.lbExtratoValor.text = "- R$ \(numberFormated)"
+                
+                cell.lbExtratoValor.text = "- R$ \(utils.formatBalance(value: myNumber))"
                 cell.lbExtratoValor.textColor = UIColor .systemRed
                 cell.lbExtratoStatus.text = "Pagamento"
             }else{
-                let roundedValue = NSString(format: "%.2f", myNumber)
-                let number = "\(roundedValue)"
-                let numberPreFormated = number.replacingOccurrences(of: "-", with: "")
-                let numberFormated = numberPreFormated.replacingOccurrences(of: ".", with: ",")
-                
-                cell.lbExtratoValor.text = "R$ \(numberFormated)"
+                cell.lbExtratoValor.text = "R$ \(utils.formatBalance(value: myNumber))"
                 cell.lbExtratoValor.textColor = UIColor .systemGreen
                 cell.lbExtratoStatus.text = "Recebimento"
             }
-            
+
             let passwordToFormate = row.data!
             let date = DateInRegion(passwordToFormate)
             let formattedString = date!.toFormat("dd/MM/yyyy", locale: Locales.english)

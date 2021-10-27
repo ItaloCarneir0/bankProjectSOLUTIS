@@ -24,7 +24,7 @@
 		BAEE1282271E12EC0036E755 /* extratoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE1281271E12EC0036E755 /* extratoCustomCell.swift */; };
 		BAF3DAAF271898260045EFDA /* StatementResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF3DAAE271898260045EFDA /* StatementResponse.swift */; };
 		BAF99EEC27207F09007C5F36 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF99EEB27207F09007C5F36 /* APIRequest.swift */; };
-		BAF99EEF27208098007C5F36 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF99EEE27208098007C5F36 /* Validators.swift */; };
+		BAF99EEF27208098007C5F36 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF99EEE27208098007C5F36 /* Utils.swift */; };
 		BAFC5DF027272F3F0058AF4C /* dataFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC5DEF27272F3F0058AF4C /* dataFormater.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,7 @@
 		BAEE1281271E12EC0036E755 /* extratoCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extratoCustomCell.swift; sourceTree = "<group>"; };
 		BAF3DAAE271898260045EFDA /* StatementResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementResponse.swift; sourceTree = "<group>"; };
 		BAF99EEB27207F09007C5F36 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
-		BAF99EEE27208098007C5F36 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		BAF99EEE27208098007C5F36 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BAFC5DEF27272F3F0058AF4C /* dataFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataFormater.swift; sourceTree = "<group>"; };
 		BEDCF64845FC9E7BB8DE8DF0 /* Pods-SolutisLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolutisLogin.release.xcconfig"; path = "Target Support Files/Pods-SolutisLogin/Pods-SolutisLogin.release.xcconfig"; sourceTree = "<group>"; };
 		CB272B34D9EA9E2DEBD4588D /* Pods-SolutisLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolutisLogin.debug.xcconfig"; path = "Target Support Files/Pods-SolutisLogin/Pods-SolutisLogin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		BAF99EED2720807F007C5F36 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				BAF99EEE27208098007C5F36 /* Validators.swift */,
+				BAF99EEE27208098007C5F36 /* Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -304,7 +304,7 @@
 				BA20B4DC270F77BD00E1A061 /* ViewController.swift in Sources */,
 				BA20B4E2270F77BD00E1A061 /* SolutisLogin.xcdatamodeld in Sources */,
 				BAEBE7ED27171FCB000640FB /* extratoViewController.swift in Sources */,
-				BAF99EEF27208098007C5F36 /* Validators.swift in Sources */,
+				BAF99EEF27208098007C5F36 /* Utils.swift in Sources */,
 				BAFC5DF027272F3F0058AF4C /* dataFormater.swift in Sources */,
 				BAF3DAAF271898260045EFDA /* StatementResponse.swift in Sources */,
 				BAEBE7F0271760B6000640FB /* User.swift in Sources */,

@@ -61,10 +61,12 @@ class ViewController: UIViewController {
     }
     @IBAction func btnLogin(_ sender: Any) {
         aiSpinner.startAnimating()
+        btnLogin.isEnabled = false
+        
         let user = tfUser.text!
         let password = tfPassword.text!
         
-        if Validators().loginValidator(user: user, password: password){
+        if Utils().loginValidator(user: user, password: password){
             APIRequest().doLogin(user: user, password: password) { result in
                 switch result{
                 case .success(let user):
