@@ -21,11 +21,10 @@
 		BAEBE7F0271760B6000640FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEBE7EF271760B6000640FB /* User.swift */; };
 		BAEDF5A12710DDCE00F1D59D /* solutis.postman_collection.json in Resources */ = {isa = PBXBuildFile; fileRef = BAEDF5A02710DDCD00F1D59D /* solutis.postman_collection.json */; };
 		BAEDF5A527147D5200F1D59D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAEDF5A427147D5200F1D59D /* GoogleService-Info.plist */; };
-		BAEE1282271E12EC0036E755 /* extratoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE1281271E12EC0036E755 /* extratoCustomCell.swift */; };
+		BAEE1282271E12EC0036E755 /* ExtratoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE1281271E12EC0036E755 /* ExtratoCustomCell.swift */; };
 		BAF3DAAF271898260045EFDA /* StatementResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF3DAAE271898260045EFDA /* StatementResponse.swift */; };
 		BAF99EEC27207F09007C5F36 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF99EEB27207F09007C5F36 /* APIRequest.swift */; };
 		BAF99EEF27208098007C5F36 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF99EEE27208098007C5F36 /* Utils.swift */; };
-		BAFC5DF027272F3F0058AF4C /* dataFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC5DEF27272F3F0058AF4C /* dataFormater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,11 +44,10 @@
 		BAEBE7EF271760B6000640FB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BAEDF5A02710DDCD00F1D59D /* solutis.postman_collection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = solutis.postman_collection.json; path = ../../../Downloads/solutis.postman_collection.json; sourceTree = "<group>"; };
 		BAEDF5A427147D5200F1D59D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		BAEE1281271E12EC0036E755 /* extratoCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extratoCustomCell.swift; sourceTree = "<group>"; };
+		BAEE1281271E12EC0036E755 /* ExtratoCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoCustomCell.swift; sourceTree = "<group>"; };
 		BAF3DAAE271898260045EFDA /* StatementResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementResponse.swift; sourceTree = "<group>"; };
 		BAF99EEB27207F09007C5F36 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		BAF99EEE27208098007C5F36 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		BAFC5DEF27272F3F0058AF4C /* dataFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataFormater.swift; sourceTree = "<group>"; };
 		BEDCF64845FC9E7BB8DE8DF0 /* Pods-SolutisLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolutisLogin.release.xcconfig"; path = "Target Support Files/Pods-SolutisLogin/Pods-SolutisLogin.release.xcconfig"; sourceTree = "<group>"; };
 		CB272B34D9EA9E2DEBD4588D /* Pods-SolutisLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolutisLogin.debug.xcconfig"; path = "Target Support Files/Pods-SolutisLogin/Pods-SolutisLogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,10 +157,9 @@
 		BAEDF59927106DD200F1D59D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BAEE1281271E12EC0036E755 /* extratoCustomCell.swift */,
+				BAEE1281271E12EC0036E755 /* ExtratoCustomCell.swift */,
 				BAEBE7EC27171FCB000640FB /* ExtratoViewController.swift */,
 				BA20B4DB270F77BD00E1A061 /* ViewController.swift */,
-				BAFC5DEF27272F3F0058AF4C /* dataFormater.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -305,11 +302,10 @@
 				BA20B4E2270F77BD00E1A061 /* SolutisLogin.xcdatamodeld in Sources */,
 				BAEBE7ED27171FCB000640FB /* ExtratoViewController.swift in Sources */,
 				BAF99EEF27208098007C5F36 /* Utils.swift in Sources */,
-				BAFC5DF027272F3F0058AF4C /* dataFormater.swift in Sources */,
 				BAF3DAAF271898260045EFDA /* StatementResponse.swift in Sources */,
 				BAEBE7F0271760B6000640FB /* User.swift in Sources */,
 				BA20B4D8270F77BD00E1A061 /* AppDelegate.swift in Sources */,
-				BAEE1282271E12EC0036E755 /* extratoCustomCell.swift in Sources */,
+				BAEE1282271E12EC0036E755 /* ExtratoCustomCell.swift in Sources */,
 				BAF99EEC27207F09007C5F36 /* APIRequest.swift in Sources */,
 				BA20B4DA270F77BD00E1A061 /* SceneDelegate.swift in Sources */,
 			);

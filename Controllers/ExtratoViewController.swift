@@ -97,7 +97,7 @@ extension ExtratoViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tbExtrato.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! extratoCustomCell
+        let cell = tbExtrato.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ExtratoCustomCell
         let row = extrato[indexPath.row]
         
         if let myNumber = row.valor {
