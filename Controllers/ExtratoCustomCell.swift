@@ -7,7 +7,7 @@
 
 import UIKit
 
-class extratoCustomCell: UITableViewCell {
+class ExtratoCustomCell: UITableViewCell {
     
     @IBOutlet weak var lbExtratoValor: UILabel!
     
