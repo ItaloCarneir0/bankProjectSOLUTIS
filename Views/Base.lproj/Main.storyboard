@@ -148,7 +148,7 @@
         <!--Extrato View Controller-->
         <scene sceneID="yMz-2t-lho">
             <objects>
-                <viewController id="Bi7-aU-SQX" customClass="extratoViewController" customModule="SolutisLogin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Bi7-aU-SQX" customClass="ExtratoViewController" customModule="SolutisLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q6q-so-NBB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

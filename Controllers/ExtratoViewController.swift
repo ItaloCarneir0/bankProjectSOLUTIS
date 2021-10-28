@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 import SwiftDate
 
-class extratoViewController: UIViewController, UITableViewDataSource {
+class ExtratoViewController: UIViewController, UITableViewDataSource {
    
     //MARK: - IBOUTLETS
     @IBOutlet weak var lbExtratoNome: UILabel!
@@ -90,7 +90,7 @@ class extratoViewController: UIViewController, UITableViewDataSource {
     }
 }
 
-extension extratoViewController: UITableViewDelegate {
+extension ExtratoViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.extrato.count

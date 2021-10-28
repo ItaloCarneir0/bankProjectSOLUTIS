@@ -118,7 +118,7 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: (Any)?) {
         if segue.identifier == "telaExtrato" {
-            let index = segue.destination as! extratoViewController
+            let index = segue.destination as! ExtratoViewController
             index.user = self.user2
         }
     }
