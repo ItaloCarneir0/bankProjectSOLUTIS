@@ -11,14 +11,18 @@ import UIKit
 class Utils {
     
     func formatBalance(value: Double) -> String {
+        let numberFormatter = NumberFormatter()
+                numberFormatter.numberStyle = .currency
+                numberFormatter.locale = Locale(identifier: "pt_BR")
+        let myNumber = numberFormatter.string(from: NSNumber(value: value))!
         
-            let stringBalance = String(format: "%.2f", value)
-            var formatedBalance = stringBalance.replacingOccurrences(of: ".", with: ",")
-            formatedBalance = stringBalance.replacingOccurrences(of: "-", with: "")
-            return formatedBalance
+        let formatedBar = myNumber.replacingOccurrences(of: "-", with: "")
+        let formatedDot = formatedBar.replacingOccurrences(of: ".", with: ",")
+        
+        
+            return formatedDot
     }
-    
-    
+     
     func loginValidator(user: String, password: String) -> Bool {
         //PASSWORD VALIDATION
         let passwordRegEx = "^(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&<>*~:`-]).{7}$"
@@ -28,7 +32,6 @@ class Utils {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
 
-        
         if emailPred.evaluate(with: user) && passwordPred.evaluate(with: password) {
             return true
         }else{
@@ -67,9 +70,5 @@ class Utils {
             }
         }
         return ""
-    }
-    
-    
-    
-    
+    }  
 }

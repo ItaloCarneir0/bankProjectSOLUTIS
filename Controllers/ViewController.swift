@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         let password = tfPassword.text!
         
         if Utils().loginValidator(user: user, password: password){
-            APIRequest().doLogin(user: user, password: password) { result in
+            APIRequest().doLogin(user: user, password: password) { [self] result in
                 switch result{
                 case .success(let user):
                     DispatchQueue.main.async {
@@ -97,11 +97,13 @@ class ViewController: UIViewController {
                   //ERRO
                     self.aiSpinner.stopAnimating()
                     self.btnLogin.isEnabled = true
-                    let alert = UIAlertController(title: "Error!", message: "Someting went wrong. Please try again later.", preferredStyle: UIAlertController.Style.alert)
-                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
+                    tfUser.textColor = UIColor.red
+                    tfPassword.textColor = UIColor.red
+                    lbError.isHidden = false
+                    
 //                    print(error)
                 }
+                self.btnLogin.isEnabled = true
             }
 
         }else{
@@ -110,6 +112,7 @@ class ViewController: UIViewController {
             tfUser.textColor = UIColor.red
             tfPassword.textColor = UIColor.red
             aiSpinner.stopAnimating()
+            btnLogin.isEnabled = true
         }
     }
     

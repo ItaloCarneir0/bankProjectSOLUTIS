@@ -41,7 +41,7 @@ class extratoViewController: UIViewController, UITableViewDataSource {
         tbExtrato.dataSource = self
         lbExtratoNome.text = user?.nome
         lbExtratoCPF.text = utils.formatCPF(cpf: (user?.cpf)!)
-        lbExtratoSaldo.text = "R$ \(utils.formatBalance(value: (user?.saldo)!))"
+        lbExtratoSaldo.text = utils.formatBalance(value: (user?.saldo)!)
         getExtrato(token: (user?.token)!)
     }
     
@@ -57,7 +57,7 @@ class extratoViewController: UIViewController, UITableViewDataSource {
                 }
                     
             case .failure(let error):
-                let alert = UIAlertController(title: "Error!", message: "Someting went wrong. Please try again later.", preferredStyle: UIAlertController.Style.alert)
+                let alert = UIAlertController(title: "Erro!", message: "Ocorreu algo de errado. Tente novamente mais tarde.", preferredStyle: UIAlertController.Style.alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
                 print(error)
@@ -70,11 +70,11 @@ class extratoViewController: UIViewController, UITableViewDataSource {
         user?.cpf = nil
         user?.saldo = nil
         user?.token = nil
-        let alert = UIAlertController(title: "Logout", message: "Are you sure you want to logout?", preferredStyle: UIAlertController.Style.actionSheet)
-        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { action in
+        let alert = UIAlertController(title: "Logout", message: "Tem certeza que deseja sair?", preferredStyle: UIAlertController.Style.actionSheet)
+        alert.addAction(UIAlertAction(title: "Sim", style: UIAlertAction.Style.destructive, handler: { action in
             self.performSegue(withIdentifier: "telaLogin", sender: nil)
         }))
-        alert.addAction(UIAlertAction(title: "No", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Não", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     
@@ -103,11 +103,11 @@ extension extratoViewController: UITableViewDelegate {
         if let myNumber = row.valor {
             if myNumber < 0{
                 
-                cell.lbExtratoValor.text = "- R$ \(utils.formatBalance(value: myNumber))"
+                cell.lbExtratoValor.text = "- \(utils.formatBalance(value: myNumber))"
                 cell.lbExtratoValor.textColor = UIColor .systemRed
                 cell.lbExtratoStatus.text = "Pagamento"
             }else{
-                cell.lbExtratoValor.text = "R$ \(utils.formatBalance(value: myNumber))"
+                cell.lbExtratoValor.text = utils.formatBalance(value: myNumber)
                 cell.lbExtratoValor.textColor = UIColor .systemGreen
                 cell.lbExtratoStatus.text = "Recebimento"
             }
