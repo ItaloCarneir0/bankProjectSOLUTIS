@@ -1,5 +1,5 @@
 # Bank Project SOLUTIS
-## Bank app make in a internalizares teste.
+## Bank app maked in a internal test.
 
 **First screen:** Have 2 Fields to receive credenciais and make simple _API Request_ to get user data
 
